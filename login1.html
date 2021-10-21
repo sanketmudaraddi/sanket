@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Login</title>
+
+<script>
+function validation(){
+	var username = document.myform.username.value;
+	var password = document.myform.password.value;
+	 if (username == "admin" && password == "admin") 
+     {
+        
+        alert("It is a successful login!");
+        window.location.href = "home1.html";    
+    }
+	else
+	{
+	alert("Failed");
+    }
+}
+</script>
+<style>
+    .Login-heading{
+        align-items: center;
+    }
+    .login-form-field{
+        margin-left: 42%;
+        font-size: larger;
+    }
+    .button{
+        margin-left: 48%;
+        background-color: black;
+        font-size:larger;
+        color:white;
+    }
+    body{
+        background-image: url('./attendance4_wall.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .button:hover{
+        color:cyan;
+    }
+</style>
+<body>
+  
+    <div class = "Login-heading">
+      <h1 style="text-align: center;color:black;font-family: 'Times New Roman', Times, serif;"><strong> Login</strong></h1> 
+        <form id="login-form" name="myform" action=home1.html >
+        <div class = "textfield">
+          <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username"style="text-align: center;">
+          </div>
+            <div class = "textfield">
+          <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password"style="text-align:center;">
+          </div>
+          <input type="button"  class="button" value="Login" onclick="validation()">
+          
+        </form>
+    </div>
+</body>
+
+</html>

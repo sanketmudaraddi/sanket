@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <!--Student List of faculty XYZ-->
+    </head>
+    <!--<title> Student List of faculty XYZ</title>-->
+    <style>
+        .button{
+            font-size: larger;
+            margin-left: 48%;
+        }
+        body{
+            background-image: url('./attendance5_wall.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style> 
+    <script>
+        function attendance(){
+            if(document.getElementById('Present1').checked)
+            {
+            document.getElementById('disp1').innerHTML="1001 Andrew is Present";
+           }
+           if(document.getElementById('Present2').checked)
+            {
+            document.getElementById('disp2').innerHTML="1002 Betty is Present";
+           }
+           if(document.getElementById('Present3').checked)
+            {
+            document.getElementById('disp3').innerHTML="1003 Chand is Present";
+           }
+           if(document.getElementById('Present4').checked)
+            {
+            document.getElementById('disp4').innerHTML="1004 Devi is Present";
+           }
+        }
+    </script>
+    <body>
+        <br><h2 style="margin-left:42%;">Students of Faculty PQR</h2>
+        <form name="myform"class="myform"id="myform">
+            <table border="1"cellpadding="5px"style="text-align:center;margin-left:35%;font-size: 30px;margin-top:3%;border-collapse:collapse;border:8px solid black;">
+                <tr>
+                    <th>USN</th>
+                    <th>Name</th>
+                    <th>Attendance</th>
+                </tr>
+                <tr>
+                    <td>1001</td>
+                    <td>Andrew</td>
+                    <td><input type="radio"name="Present1" id="Present1">Present
+                    <input type="radio"name="Present1">Absent</td>
+                </tr>
+                <tr>
+                    <td>1002</td>
+                    <td>Betty</td>
+                    <td><input type="radio"name="Present2" id="Present2">Present
+                    <input type="radio"name="Present2">Absent</td>
+                </tr>
+                <tr>
+                    <td>1003</td>
+                    <td>Chand</td>
+                    <td><input type="radio"name="Present3" id="Present3">Present
+                    <input type="radio"name="Present3">Absent</td>
+                </tr>
+                <tr>
+                    <td>1004</td>
+                    <td>Devi</td>
+                    <td><input type="radio"name="Present4" id="Present4">Present
+                    <input type="radio"name="Present4">Absent</td>
+                </tr>
+            </table>
+            <br><br><input type="button" name="Submit" value="submit" class="button" onclick="attendance()">
+        </form>
+        <h2><center>Present Students List</center></h2>
+        <div id="disp1" style=
+        "color:black; font-size:18px; font-weight:bold;margin-left:45%;">
+    </div> 
+    <div id="disp2" style=
+        "color:black; font-size:18px; font-weight:bold;margin-left:45%;">
+    </div> 
+    <div id="disp3" style=
+        "color:black; font-size:18px; font-weight:bold;margin-left:45%;">
+    </div>
+    <div id="disp4" style=
+        "color:black; font-size:18px; font-weight:bold;margin-left:45%;">
+    </div>
+    
+    </body>
+</html>
+
+
+
+                

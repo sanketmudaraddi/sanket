@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="bookstyle.css">
+	<script type="text/javascript">
+		var a1,a2,a3,a4,a5
+		function bill()
+		{
+			a1=document.myform.v1.value;
+			a2=document.myform.v2.value;
+			a3=document.myform.v3.value;
+			a4=document.myform.v4.value;
+			a5=document.myform.v5.value;
+			a1=parseFloat(a1);
+			a2=parseFloat(a2);
+			a3=parseFloat(a3);
+			a4=parseFloat(a4);
+			a5=parseFloat(a5);
+
+			document.myform.v6.value=((a1*250)+(a2*150)+(a3*50)+(a4*150)+(a5*350))
+		}
+
+	</script>
+	
+</head>
+<body>
+	<center>
+      <h1>Select the books and enter the quantity</h1>
+      <form name="myform">
+      <table width="50%" border="5px Solid black">
+      	<tr>
+      		<th>Book Name</th>
+      		<th>Cost</th>
+      		<th>Quantity</th>
+      	</tr>
+
+      	<tr>
+      		<td>Harry Potter-Part 1</td>
+      		<td>250</td>
+      		<td><input type="number" name="v1"></td>
+      	</tr>
+
+      	<tr>
+      		<td>House of cards</td>
+      		<td>150</td>
+      		<td><input type="number" name="v2"></td>
+      	</tr>
+
+      	<tr>
+      		<td>Panchatantra Stories</td>
+      		<td>50</td>
+      		<td><input type="number" name="v3"></td>
+      	</tr>
+
+      	<tr>
+      		<td>Twlight saga </td>
+      		<td>150</td>
+      		<td><input type="number" name="v4"></td>
+      	</tr>
+
+      	<tr>
+      		<td>The curse of blood river</td>
+      		<td>350</td>
+      		<td><input type="number" name="v5"></td>
+      	</tr>
+      </table>
+      <br><br><br>
+      <input type="button" id ="b" value="BILL" onclick="bill()">
+      <input type="text" id="b" name="v6">
+  </form>
+</body>
+</html>
